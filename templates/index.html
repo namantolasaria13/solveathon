@@ -1,101 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Solve-A-Thon '24 | VIT Chennai</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="../static/img/logo.png" rel="icon">
+    <link href="../static/img/logo.png" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../static/lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="../static/lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="../static/css/style.css" rel="stylesheet">
-</head>
+    <link href="../static/css/style.css" rel="stylesheet" />
 
-<body>
+    <!-- Swiper.js stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
 
+  <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h2 class="m-0 text-primary"><img class="img-fluid me-2" src="../static/img/logo.png" alt=""
-                    style="width: 45px;"></h2>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-4 py-lg-0">
-                <a href="#organizers" class="nav-item nav-link">Organizers</a>
-                <a href="#themes" class="nav-item nav-link">Themes</a>
-                <a href="#timeline" class="nav-item nav-link">Timeline</a>
-                <a href="#prizes" class="nav-item nav-link">Prizes</a>
-                <a href="#sponsors" class="nav-item nav-link">Sponsors</a>
-                <a href="#team" class="nav-item nav-link">Team</a>
-                <!-- <a href="#contact" class="nav-item nav-link">Contact</a> -->
-            </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://www.instagram.com/solveathon.vitc"><i
-                        class="fab fa-instagram"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
-                    href="https://whatsapp.com/channel/0029VaSdSTBAO7RMLSuN6U3y"><i class="fab fa-whatsapp"></i></a>
-                <!-- <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i
-                        class="fab fa-linkedin-in"></i></a> -->
-            </div>
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5"
+    >
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <h2 class="m-0 text-primary">
+          <img
+            class="img-fluid me-2"
+            src="../static/img/logo.png"
+            alt=""
+            style="width: 45px"
+          />
+        </h2>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-4 py-lg-0">
+          <a href="#organizers" class="nav-item nav-link">Organizers</a>
+          <a href="#themes" class="nav-item nav-link">Themes</a>
+          <a href="#timeline" class="nav-item nav-link">Timeline</a>
+          <a href="#prizes" class="nav-item nav-link">Prizes</a>
+          <a href="#sponsors" class="nav-item nav-link">Sponsors</a>
+          <a href="#team" class="nav-item nav-link">Team</a>
+          <!-- <a href="#contact" class="nav-item nav-link">Contact</a> -->
         </div>
+        <div class="h-100 d-lg-inline-flex align-items-center d-none">
+          <a
+            class="btn btn-square rounded-circle bg-light text-primary me-2"
+            href="https://www.instagram.com/solveathon.vitc"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-square rounded-circle bg-light text-primary me-2"
+            href="https://whatsapp.com/channel/0029VaSdSTBAO7RMLSuN6U3y"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <!-- <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i
+                        class="fab fa-linkedin-in"></i></a> -->
+        </div>
+      </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Header Start -->
     <div class="container-fluid hero-header bg-light py-5 mb-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 mb-3 animated slideInDown">SOLVE-A-THON</h1>
-                    <p class="animated slideInDown">A 24-hour Hackathon, organized by the Hostel Committee in partnership with V-NEST, is set to ignite on the morning of April 10<sup>th</sup>. Tailored to address challenges faced by hostellers within the hostel and comprehensively target campus-related issues, this event is designed to elevate the student experience. With a focus on promoting empathy and the strategic application of intelligence across various domains, we invite you to be a part of this transformative initiative.</p>
-                    <a href="" class="btn btn-primary py-3 px-4 animated slideInDown">Coming Soon!</a>
-                </div>
-                <div class="col-lg-6 animated fadeIn">
-                    <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;"
-                        src="../static/img/image-1.png" alt="">
-                </div>
-            </div>
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-4 mb-3 animated slideInDown">SOLVE-A-THON</h1>
+            <p class="animated slideInDown">
+              A 24-hour Hackathon, organized by the Hostel Committee in
+              partnership with V-NEST, is set to ignite on the morning of April
+              10<sup>th</sup>. Tailored to address challenges faced by
+              hostellers within the hostel and comprehensively target
+              campus-related issues, this event is designed to elevate the
+              student experience. With a focus on promoting empathy and the
+              strategic application of intelligence across various domains, we
+              invite you to be a part of this transformative initiative.
+            </p>
+            <a href="" class="btn btn-primary py-3 px-4 animated slideInDown"
+              >Coming Soon!</a
+            >
+          </div>
+          <div class="col-lg-6 animated fadeIn">
+            <img
+              class="img-fluid animated pulse infinite"
+              style="animation-duration: 3s"
+              src="../static/img/image-1.png"
+              alt=""
+            />
+          </div>
         </div>
+      </div>
     </div>
     <!-- Header End -->
-  
+
     <!-- VIT Chennai Start -->
     <!-- <div class="container-xxl py-5" id="about">
         <div class="container">
@@ -172,155 +223,257 @@
 
     <!-- Organizers Start -->
     <div id="organizers">
-        <div class="container-xxl bg-light py-5 my-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                    <h1 class="display-6">Organizing Partners</h1>
-                    <p class="text-primary fs-5 mb-5"></p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item bg-white p-5">
-                            <img class="img-fluid mb-4" src="../static/img/organizers/hostel.png" alt="" height="142px" width="142px">
-                            <h5 class="mb-3">Hostel Commitee</h5>
-                            <p>The Hostel Committee of VIT Chennai is always ready to cater to the needs of the students to
-                                ease their lives far from the comfort of their own homes. At any time of the day or night,
-                                at least one or two staff members are on duty to cater to emergencies in the respective
-                                hostel. The hostel committee is sponsoring the complete event. Refreshments and meals during
-                                the event will also be served by the hostel committee.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item bg-white p-5">
-                            <img class="img-fluid mb-4" src="../static/img/organizers/1679679342144-removebg-preview (1).png" alt="" height="142px" width="142px">
-                            <h5 class="mb-3">V-NEST</h5>
-                            <p>VIT Chennai has a vibrant eco system for innovations including Incubation we have two incubation center to support students, faculty members for converting their startup ideas into startups with faculty members from each school to coordinate the innovation and Startup activities. VIT Social Business Incubator is started in the year 2017 funded by the British Council in association with Cambridge Judge Business School UK and V-NEST started in the year 2020 supported by the institute.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item bg-white p-5">
-                            <img class="img-fluid mb-4" src="../static/img/organizers/EE0vCMfVAAA_Lxj.png" alt="" height="142px" width="142px" style="padding-bottom: 35px;">
-                            <h5 class="mb-3">Institution's Innovation Council</h5>
-                            <p>
-                                The Institution's Innovation Council (IIC) is an initiative by the Government of India, under the Ministry of Education, to foster innovation and entrepreneurship among educational institutions. It aims to create a culture of innovation and entrepreneurship within colleges and universities across the country.
-                                
-                                The primary objective of IIC is to encourage, inspire, and nurture young minds to think creatively and come up with innovative solutions to real-world problems.</p>
-                        </div>
-                    </div>
-                
-                    
-                
-                </div>
+      <div class="container-xxl bg-light py-5 my-5">
+        <div class="container py-5">
+          <div
+            class="text-center mx-auto wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 500px"
+          >
+            <h1 class="display-6">Organizing Partners</h1>
+            <p class="text-primary fs-5 mb-5"></p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-item bg-white p-5">
+                <img
+                  class="img-fluid mb-4"
+                  src="../static/img/organizers/hostel.png"
+                  alt=""
+                  height="142px"
+                  width="142px"
+                />
+                <h5 class="mb-3">Hostel Commitee</h5>
+                <p>
+                  The Hostel Committee of VIT Chennai is always ready to cater
+                  to the needs of the students to ease their lives far from the
+                  comfort of their own homes. At any time of the day or night,
+                  at least one or two staff members are on duty to cater to
+                  emergencies in the respective hostel. The hostel committee is
+                  sponsoring the complete event. Refreshments and meals during
+                  the event will also be served by the hostel committee.
+                </p>
+              </div>
             </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item bg-white p-5">
+                <img
+                  class="img-fluid mb-4"
+                  src="../static/img/organizers/1679679342144-removebg-preview (1).png"
+                  alt=""
+                  height="142px"
+                  width="142px"
+                />
+                <h5 class="mb-3">V-NEST</h5>
+                <p>
+                  VIT Chennai has a vibrant eco system for innovations including
+                  Incubation we have two incubation center to support students,
+                  faculty members for converting their startup ideas into
+                  startups with faculty members from each school to coordinate
+                  the innovation and Startup activities. VIT Social Business
+                  Incubator is started in the year 2017 funded by the British
+                  Council in association with Cambridge Judge Business School UK
+                  and V-NEST started in the year 2020 supported by the
+                  institute.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item bg-white p-5">
+                <img
+                  class="img-fluid mb-4"
+                  src="../static/img/organizers/EE0vCMfVAAA_Lxj.png"
+                  alt=""
+                  height="142px"
+                  width="142px"
+                  style="padding-bottom: 35px"
+                />
+                <h5 class="mb-3">Institution's Innovation Council</h5>
+                <p>
+                  The Institution's Innovation Council (IIC) is an initiative by
+                  the Government of India, under the Ministry of Education, to
+                  foster innovation and entrepreneurship among educational
+                  institutions. It aims to create a culture of innovation and
+                  entrepreneurship within colleges and universities across the
+                  country. The primary objective of IIC is to encourage,
+                  inspire, and nurture young minds to think creatively and come
+                  up with innovative solutions to real-world problems.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Organizers End -->
 
     <!-- Themes Start -->
     <div class="container-xxl bg-light py-5 my-5" id="themes">
-        <div class="container py-5">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h1 class="display-6">Themes</h1>
-                <p class="text-primary fs-5 mb-5">Think, Create, Innovate!</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="../static/img/hostel.png" alt="" height="75px" width="75px">
-                        <h5 class="mb-3">Hostel Hurdles</h5>
-                        <p>Offer comprehensive solutions to improve safety and security within hostel premises, while
-                            also designing systems or apps to track and reduce food wastage in dining facilities thus
-                            promoting cost savings.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="../static/img/union.png" alt="" height="75px" width="75px">
-                        <h5 class="mb-3">Students' Welfare</h5>
-                        <p>Facilitate cultural exchange and diversity appreciation among hostel residents through
-                            events, workshops, or online platforms promoting intercultural understanding.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="../static/img/leaf.png" alt="" height="75px" width="75px">
-                        <h5 class="mb-3">Campus Sustainability</h5>
-                        <p>Develop eco-friendly hostel solutions: reduce energy, promote recycling, implement
-                            sustainability. Optimize water/electricity for cost savings, environmental health.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="../static/img/students.png" alt="" height="75px" width="75px">
-                        <h5 class="mb-3">Students' Wellbeing</h5>
-                        <p>Create solutions to assist students in their career development and financial management
-                            needs, mentorship programs, skill-building workshops, budgeting apps, and peer-to-peer
-                            lending platforms.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="../static/img/healthcare.png" alt="" height="75px"
-                            width="75px">
-                        <h5 class="mb-3">Healthcare Solutions</h5>
-                        <p>Offer services or products aimed at promoting physical and mental well-being among hostel
-                            residents, such as fitness programs, mindfulness workshops, or healthy meal options.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="../static/img/bulb.png" alt="" height="75px" width="75px">
-                        <h5 class="mb-3">Open Innovation</h5>
-                        <p>Voice your challenges and bring forth your own solutions. Engage in collaborative
-                            problem-solving to address issues directly affecting your living or academic environment.
-                        </p>
-                    </div>
-                </div>
-            </div>
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        >
+          <h1 class="display-6">Themes</h1>
+          <p class="text-primary fs-5 mb-5">Think, Create, Innovate!</p>
         </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item bg-white p-5">
+              <img
+                class="img-fluid mb-4"
+                src="../static/img/hostel.png"
+                alt=""
+                height="75px"
+                width="75px"
+              />
+              <h5 class="mb-3">Hostel Hurdles</h5>
+              <p>
+                Offer comprehensive solutions to improve safety and security
+                within hostel premises, while also designing systems or apps to
+                track and reduce food wastage in dining facilities thus
+                promoting cost savings.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item bg-white p-5">
+              <img
+                class="img-fluid mb-4"
+                src="../static/img/union.png"
+                alt=""
+                height="75px"
+                width="75px"
+              />
+              <h5 class="mb-3">Students' Welfare</h5>
+              <p>
+                Facilitate cultural exchange and diversity appreciation among
+                hostel residents through events, workshops, or online platforms
+                promoting intercultural understanding.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item bg-white p-5">
+              <img
+                class="img-fluid mb-4"
+                src="../static/img/leaf.png"
+                alt=""
+                height="75px"
+                width="75px"
+              />
+              <h5 class="mb-3">Campus Sustainability</h5>
+              <p>
+                Develop eco-friendly hostel solutions: reduce energy, promote
+                recycling, implement sustainability. Optimize water/electricity
+                for cost savings, environmental health.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item bg-white p-5">
+              <img
+                class="img-fluid mb-4"
+                src="../static/img/students.png"
+                alt=""
+                height="75px"
+                width="75px"
+              />
+              <h5 class="mb-3">Students' Wellbeing</h5>
+              <p>
+                Create solutions to assist students in their career development
+                and financial management needs, mentorship programs,
+                skill-building workshops, budgeting apps, and peer-to-peer
+                lending platforms.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item bg-white p-5">
+              <img
+                class="img-fluid mb-4"
+                src="../static/img/healthcare.png"
+                alt=""
+                height="75px"
+                width="75px"
+              />
+              <h5 class="mb-3">Healthcare Solutions</h5>
+              <p>
+                Offer services or products aimed at promoting physical and
+                mental well-being among hostel residents, such as fitness
+                programs, mindfulness workshops, or healthy meal options.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item bg-white p-5">
+              <img
+                class="img-fluid mb-4"
+                src="../static/img/bulb.png"
+                alt=""
+                height="75px"
+                width="75px"
+              />
+              <h5 class="mb-3">Open Innovation</h5>
+              <p>
+                Voice your challenges and bring forth your own solutions. Engage
+                in collaborative problem-solving to address issues directly
+                affecting your living or academic environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Themes End -->
 
     <!-- Timeline Start -->
     <div class="container-xxl py-5" id="timeline">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h1 class="display-6">Timeline</h1>
-            </div>
-            <div class="owl-carousel roadmap-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="roadmap-item">
-                    <div class="roadmap-point"><span></span></div>
-                    <h5>5<sup>th</sup> March 2024</h5>
-                    <span>Solve-A-Thon Reveal</span>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-point"><span></span></div>
-                    <h5>12<sup>th</sup> March 2024</h5>
-                    <span>Registration Starts</span>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-point"><span></span></div>
-                    <h5>30<sup>th</sup> March 2024</h5>
-                    <span>Registrations Ends</span>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-point"><span></span></div>
-                    <h5>7<sup>th</sup> April 2024</h5>
-                    <span>Qualifiers Results </span>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-point"><span></span></div>
-                    <h5>9<sup>th</sup> April 2024</h5>
-                    <span>Hackathon Starts</span>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-point"><span></span></div>
-                    <h5>10<sup>th</sup> April 2024</h5>
-                    <span>Hackathon Ends</span>
-                </div>
-            </div>
+      <div class="container">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        >
+          <h1 class="display-6">Timeline</h1>
         </div>
+        <div
+          class="owl-carousel roadmap-carousel wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="roadmap-item">
+            <div class="roadmap-point"><span></span></div>
+            <h5>5<sup>th</sup> March 2024</h5>
+            <span>Solve-A-Thon Reveal</span>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-point"><span></span></div>
+            <h5>12<sup>th</sup> March 2024</h5>
+            <span>Registration Starts</span>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-point"><span></span></div>
+            <h5>30<sup>th</sup> March 2024</h5>
+            <span>Registrations Ends</span>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-point"><span></span></div>
+            <h5>7<sup>th</sup> April 2024</h5>
+            <span>Qualifiers Results </span>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-point"><span></span></div>
+            <h5>9<sup>th</sup> April 2024</h5>
+            <span>Hackathon Starts</span>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-point"><span></span></div>
+            <h5>10<sup>th</sup> April 2024</h5>
+            <span>Hackathon Ends</span>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Timeline End -->
 
@@ -348,552 +501,1169 @@
 
     <!-- Prizes Start -->
     <div class="container-xxl bg-light" id="prizes">
-        <div class="container py-5">
-            <div class="row g-5 justify-content-center">
-                <h1 class="text-center wow fadeIn">🏆 Prize Pool</h1>
-                <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-4 text-center" style="font-size: 100px;">₹<span data-toggle="counter-up">50,000</span></h1>
-                    <img class="img-fluid mb-4" src="">
-                </div>
-            </div>
+      <div class="container py-5">
+        <div class="row g-5 justify-content-center">
+          <h1 class="text-center wow fadeIn">🏆 Prize Pool</h1>
+          <div
+            class="col-lg-4 col-md-6 text-center wow fadeIn"
+            data-wow-delay="0.1s"
+          >
+            <h1 class="display-4 text-center" style="font-size: 100px">
+              ₹<span data-toggle="counter-up">50,000</span>
+            </h1>
+            <img class="img-fluid mb-4" src="" />
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <!-- Prizes End -->
 
     <!-- Sponsors Start -->
     <div class="container-xxl py-5" id="sponsors">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h1 class="display-6">Our Sponsors</h1><br><br>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-start">
-                        <div class="ps-4">
-                            <img class="img-fluid flex-shrink-0" src="../static/img/devfolio.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-start">
-                        <div class="ps-4">
-                            <img class="img-fluid flex-shrink-0" src="../static/img/replit.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-start">
-                        <div class="ps-4">
-                            <img class="img-fluid flex-shrink-0" src="../static/img/polygon.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        >
+          <h1 class="display-6">Our Sponsors</h1>
+          <br /><br />
         </div>
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="d-flex align-items-start">
+              <div class="ps-4">
+                <img
+                  class="img-fluid flex-shrink-0"
+                  src="../static/img/devfolio.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="d-flex align-items-start">
+              <div class="ps-4">
+                <img
+                  class="img-fluid flex-shrink-0"
+                  src="../static/img/replit.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="d-flex align-items-start">
+              <div class="ps-4">
+                <img
+                  class="img-fluid flex-shrink-0"
+                  src="../static/img/polygon.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Sponsors End -->
 
     <!-- Team Start -->
     <div class="container-fluid pt-5">
-        <div class="container">
-            <!-- <div class="text-center pb-2">
+      <div class="container">
+        <!-- <div class="text-center pb-2">
                 <h1 class="mb-4">Our Team</h1><br><br>
             </div> -->
 
-            <h2 style="text-align: center;">Faculty Co-ordinators</h2><br><br>
-            <div class="row justify-content-center">
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 300px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/faculty/pattabiraman.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Dr. Pattabiraman V</h4>
-                    <i>Director Hostel</i>
-                </div>     
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 300px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/faculty/velmathi.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Dr. Velmathi G</h4>
-                    <i>Deputy Director Hostel</i>
-                </div>  
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 300px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/faculty/milind.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Dr. Milind Shrinivas Dangate</h4>
-                    <i>Chief Warden</i>
-                </div>  
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 300px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/faculty/felix.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Dr. A Felix</h4>
-                    <i>Faculty Warden</i>
-                </div>  
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 300px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/faculty/david.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Dr. David Raj Micheal</h4>
-                    <i>Faculty Warden</i>
-                </div>                                                                             
-            </div>            
-
-            <h2 style="text-align: center;">Core Team</h2><br><br>
-            <div class="row">
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/naman2.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;"
-                                href="https://www.instagram.com/naman.tolasaria"><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/namantolasaria"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Naman</h4>
-                    <i>Overall Co-ordinator</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/raghav arora.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/raghavarora9899"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="http://www.linkedin.com/in/raghav-arora-470928261"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Raghav</h4>
-                    <i>Overall Co-ordinator</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/yash agarwal.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/agarwalyash_041/"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/yash-agarwal-b133b326a/"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Yash</h4>
-                    <i>Overall Co-ordinator</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/hardik hasani.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/hasa.ni2k"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://in.linkedin.com/in/hardik-hasani-495752210"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Hardik</h4>
-                    <i>Overall Co-ordinator</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/Kashvi Jaiswal.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/kashvi._jaiswal"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/kashvi-jaiswal-886819250"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Kashvi</h4>
-                    <i>Overall Co-ordinator</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/Kaushikee bhatt.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/kaushikee_bhatt"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/kaushikee-bhatt-bb4687228"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Kaushikee</h4>
-                    <i>Overall Co-ordinator</i>
-                </div>
-
-                <h2 style="text-align: center; padding-bottom: 50px;">Team Members</h2><br><br>
-
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/soham.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/soham._.datta/"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/soham-datta-631809245/"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Soham</h4>
-                    <i>Technical</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/adesh.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/adesh09/"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/adesh-yadav-870517248/"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Adesh</h4>
-                    <i>Technical</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/waseeq.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/waseeq_zf"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/mohd-waseeq-zafar-ba2811285"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Waseeq</h4>
-                    <i>Finance</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/mehul.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/mehul_dx007"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/mehul-dhingra-10810b231"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Mehul</h4>
-                    <i>Management</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/parag.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/pa.rougv"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/parag-vastrad-56296a272"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Parag</h4>
-                    <i>Management</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/aashvi.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/aashvi26"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/aashvi-shrivastava-7700a7264"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Aashvi</h4>
-                    <i>Management</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/mukti patangia.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/mukti_patangia"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/mukti-patangia-3bb11a248"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Mukti</h4>
-                    <i>Operations</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/jashan dang.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/jashan_dang"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/jashan-dang-1a7528231"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Jashan</h4>
-                    <i>Operations</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/himangi.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/hehehimi"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/himangi-agrawal-a31247157"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Himangi</h4>
-                    <i>Operations</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/shashank.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/shashank_2004"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/shashank-jha-981858266"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Shashank</h4>
-                    <i>Content</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/shubham.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/shubhi.says/"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/kumar-shubham37"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Shubham</h4>
-                    <i>Content</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/ranvir.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/ranvir_deshmukh"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/ranvir-deshmukh-622461288"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Ranvir</h4>
-                    <i>Content</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/arpita.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/arpita_kumar_31"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/arpita-kumar-5ab0a92b8"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Arpita</h4>
-                    <i>Registration</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/jyostna.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/jopotsnapa/"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/jyotsna-rajkumar-542502278"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Jyotsna</h4>
-                    <i>Registration</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/chirag.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/chikuuuuwu"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/chirag-dhawan-0800372a7"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Chirag</h4>
-                    <i>Registration</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/aditya.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/aditya_rajawat17/"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/aditya-singh-kushwah-90aa00249/"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Aditya</h4>
-                    <i>Registration</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/garv.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/gravy5002"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/garv-sharma-140b29277"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Garv Sharma</h4>
-                    <i>Photography</i>
-                </div>
-                <div class="col-md-2 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4"
-                        style="height: 200px; width: 200px; margin-left: auto; margin-right: auto; border-radius: 10px; overflow: hidden;">
-                        <img class="img-fluid w-100" src="../static/img/team/tamilalagan.jpg" alt=""
-                            style="object-fit: cover; height: 100%; width: 100%;" />
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-
-                            <a class="btn btn-outline-light text-center mr-2 px-0 social"
-                                style="width: 40px; height: 40px;" href="https://www.instagram.com/tamilalagank_"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-center px-0 social" style="width: 40px; height: 40px;"
-                                href="https://www.linkedin.com/in/tamilalagan-k-34900b269"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Tamilalagan K</h4>
-                    <i>Photography</i>
-                </div>
-
-                <!-- Repeat this block for each team member, up to 6 in a row -->
+        <h2 style="text-align: center">Faculty Co-ordinators</h2>
+        <br /><br />
+        <div class="row justify-content-center">
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 300px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/faculty/pattabiraman.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
             </div>
+            <h4>Dr. Pattabiraman V</h4>
+            <i>Director Hostel</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 300px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/faculty/velmathi.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Dr. Velmathi G</h4>
+            <i>Deputy Director Hostel</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 300px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/faculty/milind.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Dr. Milind Shrinivas Dangate</h4>
+            <i>Chief Warden</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 300px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/faculty/felix.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Dr. A Felix</h4>
+            <i>Faculty Warden</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 300px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/faculty/david.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Dr. David Raj Micheal</h4>
+            <i>Faculty Warden</i>
+          </div>
         </div>
+
+        <h2 style="text-align: center">Core Team</h2>
+        <br /><br />
+        <div class="row">
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/naman2.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/naman.tolasaria"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/namantolasaria"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Naman</h4>
+            <i>Overall Co-ordinator</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/raghav arora.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/raghavarora9899"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="http://www.linkedin.com/in/raghav-arora-470928261"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Raghav</h4>
+            <i>Overall Co-ordinator</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/yash agarwal.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/agarwalyash_041/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/yash-agarwal-b133b326a/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Yash</h4>
+            <i>Overall Co-ordinator</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/hardik hasani.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/hasa.ni2k"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://in.linkedin.com/in/hardik-hasani-495752210"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Hardik</h4>
+            <i>Overall Co-ordinator</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/Kashvi Jaiswal.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/kashvi._jaiswal"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/kashvi-jaiswal-886819250"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Kashvi</h4>
+            <i>Overall Co-ordinator</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/Kaushikee bhatt.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/kaushikee_bhatt"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/kaushikee-bhatt-bb4687228"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Kaushikee</h4>
+            <i>Overall Co-ordinator</i>
+          </div>
+
+          <h2 style="text-align: center; padding-bottom: 50px">Team Members</h2>
+          <br /><br />
+
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/soham.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/soham._.datta/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/soham-datta-631809245/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Soham</h4>
+            <i>Technical</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/adesh.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/adesh09/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/adesh-yadav-870517248/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Adesh</h4>
+            <i>Technical</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/waseeq.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/waseeq_zf"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/mohd-waseeq-zafar-ba2811285"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Waseeq</h4>
+            <i>Finance</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/mehul.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/mehul_dx007"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/mehul-dhingra-10810b231"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Mehul</h4>
+            <i>Management</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/parag.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/pa.rougv"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/parag-vastrad-56296a272"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Parag</h4>
+            <i>Management</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/aashvi.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/aashvi26"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/aashvi-shrivastava-7700a7264"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Aashvi</h4>
+            <i>Management</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/mukti patangia.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/mukti_patangia"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/mukti-patangia-3bb11a248"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Mukti</h4>
+            <i>Operations</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/jashan dang.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/jashan_dang"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/jashan-dang-1a7528231"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Jashan</h4>
+            <i>Operations</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/himangi.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/hehehimi"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/himangi-agrawal-a31247157"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Himangi</h4>
+            <i>Operations</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/shashank.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/shashank_2004"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/shashank-jha-981858266"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Shashank</h4>
+            <i>Content</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/shubham.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/shubhi.says/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/kumar-shubham37"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Shubham</h4>
+            <i>Content</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/ranvir.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/ranvir_deshmukh"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/ranvir-deshmukh-622461288"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Ranvir</h4>
+            <i>Content</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/arpita.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/arpita_kumar_31"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/arpita-kumar-5ab0a92b8"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Arpita</h4>
+            <i>Registration</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/jyostna.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/jopotsnapa/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/jyotsna-rajkumar-542502278"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Jyotsna</h4>
+            <i>Registration</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/chirag.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/chikuuuuwu"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/chirag-dhawan-0800372a7"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Chirag</h4>
+            <i>Registration</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/aditya.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/aditya_rajawat17/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/aditya-singh-kushwah-90aa00249/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Aditya</h4>
+            <i>Registration</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/garv.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/gravy5002"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/garv-sharma-140b29277"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Garv Sharma</h4>
+            <i>Photography</i>
+          </div>
+          <div class="col-md-2 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="
+                height: 200px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+            >
+              <img
+                class="img-fluid w-100"
+                src="../static/img/team/tamilalagan.jpg"
+                alt=""
+                style="object-fit: cover; height: 100%; width: 100%"
+              />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.instagram.com/tamilalagank_"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0 social"
+                  style="width: 40px; height: 40px"
+                  href="https://www.linkedin.com/in/tamilalagan-k-34900b269"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Tamilalagan K</h4>
+            <i>Photography</i>
+          </div>
+
+          <!-- Repeat this block for each team member, up to 6 in a row -->
+        </div>
+      </div>
     </div>
     <!-- Team End -->
 
@@ -1055,31 +1825,98 @@
 
     <!-- <hr><h5 class="mb-4 text-center">&copy; <a href="#">VIT Chennai</a>, All Right Reserved.</h5> -->
 
-    <hr>
-
-    <div class="container-fluid copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <h5>&copy; <a href="https://chennai.vit.ac.in/">VIT Chennai</a>, All Right Reserved.</h5>
-                </div>
-                <div class="d-flex col-md-6 text-center text-md-center mb-3 mb-md-0">
-                    <!-- <h5 class="mb-4">Follow Us</h5> -->
-                    <!-- <div class="d-flex"> -->
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <!-- </div> -->
-                </div>
-            </div>
+    <hr />
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="../static/img/_MG_6134.JPG" alt="mg1" />
         </div>
+        <div class="swiper-slide">
+          <img src="../static/img/_MG_6154.JPG" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../static/img/_MG_6209.JPG" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../static/img/CHOOSE.JPG" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../static/img/not.JPG" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../static/img/_MG_6466.JPG" alt="" />
+        </div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="flex-gap-center">
+      <div>
+        <span class="flex-gap-center-span">Any queries?</span>
+        <p class="flex-gap-center-p">
+          Mail at
+          <span class="flex-gap-center-p-span"
+            >Help@solveathon.in 9883359998</span
+          >
+        </p>
+      </div>
+
+      <div>
+        <span class="flex-gap-center-span">Overall coordinator</span>
+        <p class="flex-gap-center-p">
+          Naman tolarasia <br />
+          <span class="flex-gap-center-p-span"
+            >Naman@solveathon.in 9830659998</span
+          >
+        </p>
+      </div>
     </div>
 
+    <div class="container-fluid copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <h5>
+              &copy; <a href="https://chennai.vit.ac.in/">VIT Chennai</a>, All
+              Right Reserved.
+            </h5>
+          </div>
+          <div class="d-flex col-md-6 text-center text-md-center mb-3 mb-md-0">
+            <!-- <h5 class="mb-4">Follow Us</h5> -->
+            <!-- <div class="d-flex"> -->
+            <a
+              class="btn btn-square rounded-circle me-1"
+              href="https://www.instagram.com/solveathon.vitc?igsh=cmZkanpzamE2ZG9k"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="btn btn-square rounded-circle me-1"
+              href="https://whatsapp.com/channel/0029VaSdSTBAO7RMLSuN6U3y"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer End -->
 
     <!-- JavaScript Libraries -->
+    <!-- swiperjs  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- --------- -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../static/lib/wow/wow.min.js"></script>
@@ -1090,6 +1927,25 @@
 
     <!-- Template Javascript -->
     <script src="../static/js/main.js"></script>
-</body>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
 
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar,
+      });
+    </script>
+  </body>
 </html>
