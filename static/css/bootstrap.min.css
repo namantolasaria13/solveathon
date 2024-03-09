@@ -8022,6 +8022,7 @@ fieldset:disabled .btn {
 }
 
 .px-3 {
+    margin: 3px;
     padding-right: 1rem !important;
     padding-left: 1rem !important
 }
