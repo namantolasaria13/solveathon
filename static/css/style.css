@@ -250,6 +250,21 @@ h6,
     background: var(--primary);
     transition: .5s;
 }
+/* Adjust the margin and padding to control the space around the button */
+button.accordion-button {
+    margin: 0; /* Remove any default margin */
+    padding: 10px; /* Adjust the padding as needed */
+  }
+  
+  /* Ensure responsiveness for Samsung Galaxy S8+ */
+  @media (max-width: 360px) {
+    button.accordion-button {
+      /* Adjust styles for Samsung Galaxy S8+ */
+      font-size: 14px; /* Decrease the font size for smaller screens */
+      padding: 8px; /* Adjust the padding for smaller screens */
+    }
+  }
+  
 
 
 .roadmap-carousel .owl-nav .owl-prev:hover,
